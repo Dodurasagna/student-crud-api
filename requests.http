@@ -1,0 +1,27 @@
+
+### Test 1: GET all students
+GET http://localhost:3000/students
+
+### Test 2: GET one student
+GET http://localhost:3000/students/1
+
+### Test 3: POST a new student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "Hasini",
+  "rollNo": "23071A0523",
+  "course": "CSE"
+}
+
+### Test 4: PATCH student details
+PATCH http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+  "course": "Computer Engineering"
+}
+
+### Test 5: DELETE a student
+DELETE http://localhost:3000/students/2
